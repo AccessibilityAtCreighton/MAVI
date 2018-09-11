@@ -235,6 +235,6 @@ class ViewController: UIViewController {
         expressionList.remove(at: i)
         expressionList.insert(contentsOf: nextExpressionList, at: i)
     }
-    //This checks for minuses
-    func checkForMinuses(
+    //This checks for '-' and switches them to ';'
+//    func checkForMinuses(
 }
