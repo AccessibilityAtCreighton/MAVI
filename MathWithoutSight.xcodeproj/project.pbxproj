@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0C3465B520DAD10A0055AB49 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3465B420DAD10A0055AB49 /* AppDelegate.swift */; };
+		0C3465B720DAD10A0055AB49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3465B620DAD10A0055AB49 /* ViewController.swift */; };
+		0C3465BA20DAD10A0055AB49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C3465B820DAD10A0055AB49 /* Main.storyboard */; };
+		0C3465BC20DAD10B0055AB49 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C3465BB20DAD10B0055AB49 /* Assets.xcassets */; };
+		0C3465BF20DAD10B0055AB49 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0C3465BD20DAD10B0055AB49 /* LaunchScreen.storyboard */; };
+		0C3465CA20DAD10B0055AB49 /* MathWithoutSightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3465C920DAD10B0055AB49 /* MathWithoutSightTests.swift */; };
+		0C3465D520DAD10B0055AB49 /* MathWithoutSightUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C3465D420DAD10B0055AB49 /* MathWithoutSightUITests.swift */; };
+		0C6DF6F32145C0CC00CECDBC /* ExternalAccessory.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0C6DF6F22145C0CC00CECDBC /* ExternalAccessory.framework */; };
+		3820C327C58F18BD9B85BEE4 /* Pods_MathWithoutSight.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7349D26023A900AA1C76A57 /* Pods_MathWithoutSight.framework */; };
+		4C92A77C5A07B1913EECEFEB /* Pods_MathWithoutSightUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E176CA2097F7F4955B0D8F9A /* Pods_MathWithoutSightUITests.framework */; };
+		5447996F344BA03550D815F9 /* Pods_MathWithoutSightTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1DA3E05DBD453AD372C9C69 /* Pods_MathWithoutSightTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0C3465C620DAD10B0055AB49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C3465A920DAD10A0055AB49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C3465B020DAD10A0055AB49;
+			remoteInfo = MathWithoutSight;
+		};
+		0C3465D120DAD10B0055AB49 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0C3465A920DAD10A0055AB49 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0C3465B020DAD10A0055AB49;
+			remoteInfo = MathWithoutSight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0C0E443720DADFC800070F2D /* MathWithoutSight-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MathWithoutSight-Bridging-Header.h"; sourceTree = "<group>"; };
+		0C3465B120DAD10A0055AB49 /* MathWithoutSight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MathWithoutSight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C3465B420DAD10A0055AB49 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0C3465B620DAD10A0055AB49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0C3465B920DAD10A0055AB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0C3465BB20DAD10B0055AB49 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0C3465BE20DAD10B0055AB49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0C3465C020DAD10B0055AB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C3465C520DAD10B0055AB49 /* MathWithoutSightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathWithoutSightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C3465C920DAD10B0055AB49 /* MathWithoutSightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathWithoutSightTests.swift; sourceTree = "<group>"; };
+		0C3465CB20DAD10B0055AB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C3465D020DAD10B0055AB49 /* MathWithoutSightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MathWithoutSightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0C3465D420DAD10B0055AB49 /* MathWithoutSightUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathWithoutSightUITests.swift; sourceTree = "<group>"; };
+		0C3465D620DAD10B0055AB49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C6DF6F22145C0CC00CECDBC /* ExternalAccessory.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ExternalAccessory.framework; path = System/Library/Frameworks/ExternalAccessory.framework; sourceTree = SDKROOT; };
+		0C6DF6F42145C0CC00CECDBC /* MathWithoutSight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MathWithoutSight.entitlements; sourceTree = "<group>"; };
+		1AA9BFA6D89EF167236B6370 /* Pods-MathWithoutSightTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathWithoutSightTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathWithoutSightTests/Pods-MathWithoutSightTests.release.xcconfig"; sourceTree = "<group>"; };
+		34A4A8C0471C0E2D380C16DD /* Pods-MathWithoutSightUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathWithoutSightUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathWithoutSightUITests/Pods-MathWithoutSightUITests.release.xcconfig"; sourceTree = "<group>"; };
+		86276BBFB3AEB37F109D79B8 /* Pods-MathWithoutSightTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathWithoutSightTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathWithoutSightTests/Pods-MathWithoutSightTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9ECF6A8E000719AFDC2E94F6 /* Pods-MathWithoutSight.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathWithoutSight.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathWithoutSight/Pods-MathWithoutSight.debug.xcconfig"; sourceTree = "<group>"; };
+		BCA0A70FB38E881B0D7E4C00 /* Pods-MathWithoutSightUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathWithoutSightUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MathWithoutSightUITests/Pods-MathWithoutSightUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		C7349D26023A900AA1C76A57 /* Pods_MathWithoutSight.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathWithoutSight.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E176CA2097F7F4955B0D8F9A /* Pods_MathWithoutSightUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathWithoutSightUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1DA3E05DBD453AD372C9C69 /* Pods_MathWithoutSightTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MathWithoutSightTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FB7304E07A42ABB764240A2C /* Pods-MathWithoutSight.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MathWithoutSight.release.xcconfig"; path = "Pods/Target Support Files/Pods-MathWithoutSight/Pods-MathWithoutSight.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0C3465AE20DAD10A0055AB49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C6DF6F32145C0CC00CECDBC /* ExternalAccessory.framework in Frameworks */,
+				3820C327C58F18BD9B85BEE4 /* Pods_MathWithoutSight.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3465C220DAD10B0055AB49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5447996F344BA03550D815F9 /* Pods_MathWithoutSightTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3465CD20DAD10B0055AB49 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C92A77C5A07B1913EECEFEB /* Pods_MathWithoutSightUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C3465A820DAD10A0055AB49 = {
+			isa = PBXGroup;
+			children = (
+				0C3465B320DAD10A0055AB49 /* MathWithoutSight */,
+				0C3465C820DAD10B0055AB49 /* MathWithoutSightTests */,
+				0C3465D320DAD10B0055AB49 /* MathWithoutSightUITests */,
+				0C3465B220DAD10A0055AB49 /* Products */,
+				F8A1AF792C31E69C630C4E6D /* Pods */,
+				21F35E34F9CDC9874FAE0A3C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0C3465B220DAD10A0055AB49 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0C3465B120DAD10A0055AB49 /* MathWithoutSight.app */,
+				0C3465C520DAD10B0055AB49 /* MathWithoutSightTests.xctest */,
+				0C3465D020DAD10B0055AB49 /* MathWithoutSightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0C3465B320DAD10A0055AB49 /* MathWithoutSight */ = {
+			isa = PBXGroup;
+			children = (
+				0C6DF6F42145C0CC00CECDBC /* MathWithoutSight.entitlements */,
+				0C3465B420DAD10A0055AB49 /* AppDelegate.swift */,
+				0C3465B620DAD10A0055AB49 /* ViewController.swift */,
+				0C3465B820DAD10A0055AB49 /* Main.storyboard */,
+				0C3465BB20DAD10B0055AB49 /* Assets.xcassets */,
+				0C3465BD20DAD10B0055AB49 /* LaunchScreen.storyboard */,
+				0C3465C020DAD10B0055AB49 /* Info.plist */,
+				0C0E443720DADFC800070F2D /* MathWithoutSight-Bridging-Header.h */,
+			);
+			path = MathWithoutSight;
+			sourceTree = "<group>";
+		};
+		0C3465C820DAD10B0055AB49 /* MathWithoutSightTests */ = {
+			isa = PBXGroup;
+			children = (
+				0C3465C920DAD10B0055AB49 /* MathWithoutSightTests.swift */,
+				0C3465CB20DAD10B0055AB49 /* Info.plist */,
+			);
+			path = MathWithoutSightTests;
+			sourceTree = "<group>";
+		};
+		0C3465D320DAD10B0055AB49 /* MathWithoutSightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0C3465D420DAD10B0055AB49 /* MathWithoutSightUITests.swift */,
+				0C3465D620DAD10B0055AB49 /* Info.plist */,
+			);
+			path = MathWithoutSightUITests;
+			sourceTree = "<group>";
+		};
+		21F35E34F9CDC9874FAE0A3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0C6DF6F22145C0CC00CECDBC /* ExternalAccessory.framework */,
+				C7349D26023A900AA1C76A57 /* Pods_MathWithoutSight.framework */,
+				F1DA3E05DBD453AD372C9C69 /* Pods_MathWithoutSightTests.framework */,
+				E176CA2097F7F4955B0D8F9A /* Pods_MathWithoutSightUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F8A1AF792C31E69C630C4E6D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				9ECF6A8E000719AFDC2E94F6 /* Pods-MathWithoutSight.debug.xcconfig */,
+				FB7304E07A42ABB764240A2C /* Pods-MathWithoutSight.release.xcconfig */,
+				86276BBFB3AEB37F109D79B8 /* Pods-MathWithoutSightTests.debug.xcconfig */,
+				1AA9BFA6D89EF167236B6370 /* Pods-MathWithoutSightTests.release.xcconfig */,
+				BCA0A70FB38E881B0D7E4C00 /* Pods-MathWithoutSightUITests.debug.xcconfig */,
+				34A4A8C0471C0E2D380C16DD /* Pods-MathWithoutSightUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0C3465B020DAD10A0055AB49 /* MathWithoutSight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C3465D920DAD10B0055AB49 /* Build configuration list for PBXNativeTarget "MathWithoutSight" */;
+			buildPhases = (
+				6FF87368CAE6A583072C6218 /* [CP] Check Pods Manifest.lock */,
+				0C3465AD20DAD10A0055AB49 /* Sources */,
+				0C3465AE20DAD10A0055AB49 /* Frameworks */,
+				0C3465AF20DAD10A0055AB49 /* Resources */,
+				9E9F7733AD626B6D9C1598EE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MathWithoutSight;
+			productName = MathWithoutSight;
+			productReference = 0C3465B120DAD10A0055AB49 /* MathWithoutSight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0C3465C420DAD10B0055AB49 /* MathWithoutSightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C3465DC20DAD10B0055AB49 /* Build configuration list for PBXNativeTarget "MathWithoutSightTests" */;
+			buildPhases = (
+				8D1E94F70B9CFED0A1C8A760 /* [CP] Check Pods Manifest.lock */,
+				0C3465C120DAD10B0055AB49 /* Sources */,
+				0C3465C220DAD10B0055AB49 /* Frameworks */,
+				0C3465C320DAD10B0055AB49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C3465C720DAD10B0055AB49 /* PBXTargetDependency */,
+			);
+			name = MathWithoutSightTests;
+			productName = MathWithoutSightTests;
+			productReference = 0C3465C520DAD10B0055AB49 /* MathWithoutSightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0C3465CF20DAD10B0055AB49 /* MathWithoutSightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0C3465DF20DAD10B0055AB49 /* Build configuration list for PBXNativeTarget "MathWithoutSightUITests" */;
+			buildPhases = (
+				DF33A2C87EBCDC534BDEA8AB /* [CP] Check Pods Manifest.lock */,
+				0C3465CC20DAD10B0055AB49 /* Sources */,
+				0C3465CD20DAD10B0055AB49 /* Frameworks */,
+				0C3465CE20DAD10B0055AB49 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0C3465D220DAD10B0055AB49 /* PBXTargetDependency */,
+			);
+			name = MathWithoutSightUITests;
+			productName = MathWithoutSightUITests;
+			productReference = 0C3465D020DAD10B0055AB49 /* MathWithoutSightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0C3465A920DAD10A0055AB49 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0940;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Creighton University";
+				TargetAttributes = {
+					0C3465B020DAD10A0055AB49 = {
+						CreatedOnToolsVersion = 9.4.1;
+						LastSwiftMigration = 0940;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 1;
+							};
+						};
+					};
+					0C3465C420DAD10B0055AB49 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 0C3465B020DAD10A0055AB49;
+					};
+					0C3465CF20DAD10B0055AB49 = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 0C3465B020DAD10A0055AB49;
+					};
+				};
+			};
+			buildConfigurationList = 0C3465AC20DAD10A0055AB49 /* Build configuration list for PBXProject "MathWithoutSight" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0C3465A820DAD10A0055AB49;
+			productRefGroup = 0C3465B220DAD10A0055AB49 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0C3465B020DAD10A0055AB49 /* MathWithoutSight */,
+				0C3465C420DAD10B0055AB49 /* MathWithoutSightTests */,
+				0C3465CF20DAD10B0055AB49 /* MathWithoutSightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0C3465AF20DAD10A0055AB49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C3465BF20DAD10B0055AB49 /* LaunchScreen.storyboard in Resources */,
+				0C3465BC20DAD10B0055AB49 /* Assets.xcassets in Resources */,
+				0C3465BA20DAD10A0055AB49 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3465C320DAD10B0055AB49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3465CE20DAD10B0055AB49 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6FF87368CAE6A583072C6218 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MathWithoutSight-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D1E94F70B9CFED0A1C8A760 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MathWithoutSightTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9E9F7733AD626B6D9C1598EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-MathWithoutSight/Pods-MathWithoutSight-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SSAccessibility/SSAccessibility.framework",
+				"${BUILT_PRODUCTS_DIR}/iosMath/iosMath.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SSAccessibility.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iosMath.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-MathWithoutSight/Pods-MathWithoutSight-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DF33A2C87EBCDC534BDEA8AB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MathWithoutSightUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0C3465AD20DAD10A0055AB49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C3465B720DAD10A0055AB49 /* ViewController.swift in Sources */,
+				0C3465B520DAD10A0055AB49 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3465C120DAD10B0055AB49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C3465CA20DAD10B0055AB49 /* MathWithoutSightTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0C3465CC20DAD10B0055AB49 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0C3465D520DAD10B0055AB49 /* MathWithoutSightUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0C3465C720DAD10B0055AB49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C3465B020DAD10A0055AB49 /* MathWithoutSight */;
+			targetProxy = 0C3465C620DAD10B0055AB49 /* PBXContainerItemProxy */;
+		};
+		0C3465D220DAD10B0055AB49 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0C3465B020DAD10A0055AB49 /* MathWithoutSight */;
+			targetProxy = 0C3465D120DAD10B0055AB49 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0C3465B820DAD10A0055AB49 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C3465B920DAD10A0055AB49 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0C3465BD20DAD10B0055AB49 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0C3465BE20DAD10B0055AB49 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0C3465D720DAD10B0055AB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0C3465D820DAD10B0055AB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0C3465DA20DAD10B0055AB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9ECF6A8E000719AFDC2E94F6 /* Pods-MathWithoutSight.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MathWithoutSight/MathWithoutSight.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V643MY2XZA;
+				INFOPLIST_FILE = MathWithoutSight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreightonUniversity.MathWithoutSight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MathWithoutSight/MathWithoutSight-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0C3465DB20DAD10B0055AB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FB7304E07A42ABB764240A2C /* Pods-MathWithoutSight.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = MathWithoutSight/MathWithoutSight.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = V643MY2XZA;
+				INFOPLIST_FILE = MathWithoutSight/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreightonUniversity.MathWithoutSight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MathWithoutSight/MathWithoutSight-Bridging-Header.h";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0C3465DD20DAD10B0055AB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86276BBFB3AEB37F109D79B8 /* Pods-MathWithoutSightTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MathWithoutSightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreightonUniversity.MathWithoutSightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MathWithoutSight.app/MathWithoutSight";
+			};
+			name = Debug;
+		};
+		0C3465DE20DAD10B0055AB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1AA9BFA6D89EF167236B6370 /* Pods-MathWithoutSightTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MathWithoutSightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreightonUniversity.MathWithoutSightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MathWithoutSight.app/MathWithoutSight";
+			};
+			name = Release;
+		};
+		0C3465E020DAD10B0055AB49 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCA0A70FB38E881B0D7E4C00 /* Pods-MathWithoutSightUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MathWithoutSightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreightonUniversity.MathWithoutSightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MathWithoutSight;
+			};
+			name = Debug;
+		};
+		0C3465E120DAD10B0055AB49 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34A4A8C0471C0E2D380C16DD /* Pods-MathWithoutSightUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = MathWithoutSightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.CreightonUniversity.MathWithoutSightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MathWithoutSight;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0C3465AC20DAD10A0055AB49 /* Build configuration list for PBXProject "MathWithoutSight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C3465D720DAD10B0055AB49 /* Debug */,
+				0C3465D820DAD10B0055AB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C3465D920DAD10B0055AB49 /* Build configuration list for PBXNativeTarget "MathWithoutSight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C3465DA20DAD10B0055AB49 /* Debug */,
+				0C3465DB20DAD10B0055AB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C3465DC20DAD10B0055AB49 /* Build configuration list for PBXNativeTarget "MathWithoutSightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C3465DD20DAD10B0055AB49 /* Debug */,
+				0C3465DE20DAD10B0055AB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0C3465DF20DAD10B0055AB49 /* Build configuration list for PBXNativeTarget "MathWithoutSightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0C3465E020DAD10B0055AB49 /* Debug */,
+				0C3465E120DAD10B0055AB49 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0C3465A920DAD10A0055AB49 /* Project object */;
+}

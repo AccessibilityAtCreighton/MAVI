@@ -1,0 +1,6 @@
+framework module Pods_MathWithoutSightTests {
+  umbrella header "Pods-MathWithoutSightTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

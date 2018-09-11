@@ -1,0 +1,6 @@
+framework module SSAccessibility {
+  umbrella header "SSAccessibility-umbrella.h"
+
+  export *
+  module * { export * }
+}
