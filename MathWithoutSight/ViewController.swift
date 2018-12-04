@@ -5,6 +5,7 @@
 //  Created by Maggie Gard on 6/20/18.
 //  Copyright © 2018 Creighton University. All rights reserved.
 //
+//  INITIAL 12/4
 
 import UIKit
 import iosMath
@@ -16,16 +17,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var mainView: UIView!
     
     // Initialize global variables
-    var speechString: String!
-    var expressionList: Array<String>!
-    var initialList: Array<Any>!
-    var visualLabel = MTMathUILabel()
+    public var speechString: String!
+    public var expressionList: Array<String>!
+    public var initialList: Array<Any>!
+    public var visualLabel = MTMathUILabel()
     // Text sent to visual label
-    let mathText = "\\pm x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{-2a}"
-//    let mathText = "x=\\frac{-2}{b}"
-//    let mathText = "\\frac{-a}{\\sqrt{-c}}+2-4"
-//    let mathText = "\\sqrt-d"
-//    let mathText = "-a-b^{-cd}"
+    public let mathText = "x=\\frac{-b\\pm\\sqrt{b^2-4ac}}{2a}"
+    //    public let mathText = "x=\\frac{-2}{b}"
+    //    public let mathText = "\\frac{-a}{\\sqrt{-c}}+2-4"
+    //    public let mathText = "\\sqrt-d"
+    //    public let mathText = "-a-b^{-cd}"
     
     
     override func viewDidLoad() {
@@ -46,13 +47,6 @@ class ViewController: UIViewController {
         initialize()
     }
     
-    func initialize() {
-        expressionList = createOtherLabels(nextMathText: mathText)
-        createLabel()
-        expressionList = parseOtherLabels()
-        print(expressionList)
-        speechString = sendToSynthesizer(expressionList: expressionList)
-    }
     
     @objc func handleSwipes(_ sender:UISwipeGestureRecognizer) {
         
@@ -66,7 +60,7 @@ class ViewController: UIViewController {
             speechSynthesizer(audioText: speechString)
         }
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -81,7 +75,15 @@ class ViewController: UIViewController {
     public var screenHeight: CGFloat {
         return UIScreen.main.bounds.height
     }
-
+    
+    func initialize() {
+        expressionList = createOtherLabels(nextMathText: mathText)
+        createLabel()
+        expressionList = parseOtherLabels()
+        print(expressionList)
+        speechString = sendToSynthesizer(expressionList: expressionList)
+    }
+    
     
     func speechSynthesizer(audioText: String) {
         // Initialize full expression utterance
@@ -140,12 +142,12 @@ class ViewController: UIViewController {
             let cutRange = expressionString.startIndex ..< expressionString.index(expressionString.startIndex, offsetBy: 6)
             expressionString.removeSubrange(cutRange)
         }
-        // If the atom is described as Close or Inner then the first 7 characters of the atom are removed. Accent is included in this group because the atom doesn't add a space after the colon.
+            // If the atom is described as Close or Inner then the first 7 characters of the atom are removed. Accent is included in this group because the atom doesn't add a space after the colon.
         else if (expressionString[expressionString.startIndex] == "C" || expressionString[expressionString.startIndex] == "I" || expressionString[expressionString.startIndex] == "A") {
             let cutRange = expressionString.startIndex ..< expressionString.index(expressionString.startIndex, offsetBy: 7)
             expressionString.removeSubrange(cutRange)
         }
-        // If the atom is described as a Number then the first 8 characters of the atom are removed
+            // If the atom is described as a Number then the first 8 characters of the atom are removed
         else if (expressionString[expressionString.startIndex] == "N") {
             let cutRange = expressionString.startIndex ..< expressionString.index(expressionString.startIndex, offsetBy: 8)
             expressionString.removeSubrange(cutRange)
@@ -155,27 +157,27 @@ class ViewController: UIViewController {
             let cutRange = expressionString.startIndex ..< expressionString.index(expressionString.startIndex, offsetBy: 9)
             expressionString.removeSubrange(cutRange)
         }
-        // If the atom is described as a Variable, Fraction, Relation, Ordinary, or Overline then the first 10 characters of the atom are removed
+            // If the atom is described as a Variable, Fraction, Relation, Ordinary, or Overline then the first 10 characters of the atom are removed
         else if (expressionString[expressionString.startIndex] == "V" || expressionString[expressionString.startIndex] == "R" || expressionString[expressionString.startIndex] == "F" || expressionString[expressionString.startIndex] == "O") {
             let cutRange = expressionString.startIndex ..< expressionString.index(expressionString.startIndex, offsetBy: 10)
             expressionString.removeSubrange(cutRange)
         }
-        // If the atom is described as Underline then the first 11 characters of the atom are removed
+            // If the atom is described as Underline then the first 11 characters of the atom are removed
         else if (expressionString[expressionString.startIndex] == "U" && expressionString[expressionString.index(after: expressionString.startIndex)] == "n" && expressionString[expressionString.index(expressionString.startIndex, offsetBy: 2)] == "d") {
             let cutRange = expressionString.startIndex ..< expressionString.index(expressionString.startIndex, offsetBy: 11)
             expressionString.removeSubrange(cutRange)
         }
-        // If the atom is described as Punctuation or a Placeholder then the first 13 characters of the atom are removed
+            // If the atom is described as Punctuation or a Placeholder then the first 13 characters of the atom are removed
         else if (expressionString[expressionString.startIndex] == "P") {
             let cutRange = expressionString.startIndex ..< expressionString.index(expressionString.startIndex, offsetBy: 13)
             expressionString.removeSubrange(cutRange)
         }
-        // If the atom is described as a Large Operator or Unary Operator then the first 16 characters of the atom are removed
+            // If the atom is described as a Large Operator or Unary Operator then the first 16 characters of the atom are removed
         else if (expressionString[expressionString.startIndex] == "L" || expressionString[expressionString.startIndex] == "U") {
             let cutRange = expressionString.startIndex ..< expressionString.index(expressionString.startIndex, offsetBy: 16)
             expressionString.removeSubrange(cutRange)
         }
-        // If the atom is described as a Binary Operator then the first 17 characters of the atom are removed
+            // If the atom is described as a Binary Operator then the first 17 characters of the atom are removed
         else if (expressionString[expressionString.startIndex] == "B") {
             let cutRange = expressionString.startIndex ..< expressionString.index(expressionString.startIndex, offsetBy: 17)
             expressionString.removeSubrange(cutRange)
@@ -208,19 +210,18 @@ class ViewController: UIViewController {
                         addExpression.removeSubrange(cutRange)
                         sendToParser(addExpression: addExpression, i: i)
                     }
-                    // Removes carrot and splits atom allowing it to be parsed on next pass
+                        // Removes carrot and splits atom allowing it to be parsed on next pass
                     else if (expression[expression.index(after: expression.startIndex)] == "^"){
                         nextExpressionList = expression.components(separatedBy: "^")
                         expressionList.remove(at: i)
                         expressionList.insert(contentsOf: nextExpressionList, at: i)
                     }
-                    // Anything larger than 1 character is parsed
+                        // Anything larger than 1 character is parsed
                     else {
                         let addExpression = expression
                         sendToParser(addExpression: addExpression, i: i)
                     }
                 }
-                // MAYBE TRY TO SPLIT BY MINUS SIGN HERE??? WILL MAKE THE LIST LONGER SO IT WILL LOOP AGAIN. NEED SOME WAY TO INDEX WHERE THE MINUS SIGN WAS TAKEN OUT AND PUT IT BACK IN AS A BINARY OPERATOR. WHY IS IT TAKING OUT THE MINUS SIGNS I DONT KNOW BUT ITS REALLY ANNOYING AND I HAVE NO CLUE HOW TO FIX IT AND I REALLY HOPE THERES AND EASIER WAY THAN JUST HARD CODING THE WHOLE PARSER FROM THE START BECAUSE THAT WOULD BE REALLY TIME CONSUMING AND WOULD REQUIRE A LOT OF SKILL THAT I DONT REALLY HAVE YET AND WOULD NEED TO GAIN BECAUSE SWIFT IS A WEIRD LANGUAGE AND XCODE CAN BE REALLY ANNOYING AT TIMES WITH ITS FATAL ERRORS AND WARNING MESSAGES THAT SEEM REALLY DESCRIPTIVE BUT ACTUALLY HIDE HOW THE REAL PROBLEM IS 200 LINES OF CODE DOWN BURIED IN A TINY FUNCTION YOU FORGOT WAS THERE AND CANT REMEMBER ITS PURPOSE BUT IT TURNS OUT IT CONNECTS EVERYTHING ELSE IN THE PROGRAM SO NOW YOUVE CREATED 4 MORE ERRORS BY FIXING THE FIRST ERROR...HI IT'S JESSIE ;)
                 i += 1
             }
             endLength = expressionList.count
@@ -235,6 +236,14 @@ class ViewController: UIViewController {
         expressionList.remove(at: i)
         expressionList.insert(contentsOf: nextExpressionList, at: i)
     }
-    //This checks for '-' and switches them to ';'
-//    func checkForMinuses(
+    
+    // This modifies the mathText to replace '-' with ';' AND '\\pm' with '?' so that it can be parsed correctly passed to the audio synthesizer where 'minus' will be read.
+    func changeMinusSign(mathText: String) -> String {
+        var adjMathText: String
+        // Loop through mathText to create new string with ';'
+        adjMathText = mathText.replacingOccurrences(of: "-", with: ";")
+        adjMathText = adjMathText.replacingOccurrences(of: "\\pm", with: "?")
+        // Return and call createDuplicateLabel
+        return adjMathText
+    }
 }
