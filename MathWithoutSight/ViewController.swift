@@ -5,7 +5,6 @@
 //  Created by Maggie Gard on 6/20/18.
 //  Copyright © 2018 Creighton University. All rights reserved.
 //
-//  INITIAL 12/4
 
 import UIKit
 import iosMath
@@ -28,6 +27,7 @@ class ViewController: UIViewController {
     //    public let mathText = "\\sqrt-d"
     //    public let mathText = "-a-b^{-cd}"
     
+    // Initial dictionary of math terms that willbe put in the text label to be read by VoiceOver
     var mathDict = [100: "plus",
                     101: "minus",
                     102: "plus or minus",
