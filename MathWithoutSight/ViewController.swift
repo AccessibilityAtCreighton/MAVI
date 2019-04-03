@@ -5,7 +5,6 @@
 //  Created by Maggie Gard on 6/20/18.
 //  Copyright © 2018 Creighton University. All rights reserved.
 //
-//  INITIAL 12/4
 
 import UIKit
 import iosMath
@@ -27,6 +26,15 @@ class ViewController: UIViewController {
     //    public let mathText = "\\frac{-a}{\\sqrt{-c}}+2-4"
     //    public let mathText = "\\sqrt-d"
     //    public let mathText = "-a-b^{-cd}"
+    
+    // Initial dictionary of math terms that willbe put in the text label to be read by VoiceOver
+    var mathDict = [100: "plus",
+                    101: "minus",
+                    102: "plus or minus",
+                    200: "times",
+                    201: "over",
+                    300: "power",
+                    301: "root"]
     
     
     override func viewDidLoad() {
@@ -79,6 +87,8 @@ class ViewController: UIViewController {
     func initialize() {
         expressionList = createOtherLabels(nextMathText: mathText)
         createLabel()
+        let adjMathText = changeMinusSign(mathText: mathText)
+        expressionList = createOtherLabels(nextMathText: adjMathText)
         expressionList = parseOtherLabels()
         print(expressionList)
         speechString = sendToSynthesizer(expressionList: expressionList)
@@ -246,4 +256,12 @@ class ViewController: UIViewController {
         // Return and call createDuplicateLabel
         return adjMathText
     }
+    
+    // This function will recognize relations and use them to recognize the first level of parsing.
+    // Need to create different text strings to send and create new labels.
+    // Maybe a different function that decides where to cut the strings.
+    // This function will decide when to cut and send the new string to createOtherLabels
+//    func parseAtRelation() {
+//
+//    }
 }
